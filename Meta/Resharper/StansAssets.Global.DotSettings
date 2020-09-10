@@ -4,7 +4,7 @@
 	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/BLANK_LINES_AROUND_AUTO_PROPERTY/@EntryValue">0</s:Int64>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=IMGUI/@EntryIndexedValue">IMGUI</s:String>
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=IOS/@EntryIndexedValue">IOS</s:String>
-	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=TypesAndNamespaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb"&gt;&lt;ExtraRule Prefix="ISN_" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="ISN_PH" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="ISN_AV" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="SA_FB" Suffix="" Style="AaBb" /&gt;&lt;/Policy&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=TypesAndNamespaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb"&gt;&lt;ExtraRule Prefix="ISN_" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="ISN_PH" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="ISN_AV" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="SA_FB" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="UM_" Suffix="" Style="AaBb" /&gt;&lt;ExtraRule Prefix="AN_" Suffix="" Style="AaBb" /&gt;&lt;/Policy&gt;</s:String>
 	
 
 	<!-- Non-public instance fields -->
@@ -189,7 +189,10 @@
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ArrangeTypeMemberModifiers/@EntryIndexedValue">WARNING</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ArrangeTypeModifiers/@EntryIndexedValue">WARNING</s:String>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Addon/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Addressables/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Blackwood/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Bluetooth/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Chartboost/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Checkmark/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Dragger/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=gameobject/@EntryIndexedValue">True</s:Boolean>
@@ -220,6 +223,8 @@
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Stanislav/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Stans/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=stansassets/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=_0028eventName_002C_0020/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=_0421redentials/@EntryIndexedValue">True</s:Boolean>
 
 	
 </wpf:ResourceDictionary>
