@@ -1,0 +1,16 @@
+{
+    "name": "StansAssets.ProjectSample.Landing",
+    "references": [
+        "StansAssets.SceneManagement",
+        "StansAssets.ProjectSample.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

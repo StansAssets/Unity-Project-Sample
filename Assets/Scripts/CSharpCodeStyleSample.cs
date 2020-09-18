@@ -139,14 +139,16 @@ namespace StansAssets.ProjectSample   // | Full contents of namespace indented
 
     // |[Line Break Examples]
     // |    - Use line break when you see fit.
-    public class MySuperClass<T> : List<T>,
-        ICollection<T>,
-        IEnumerable<T>,
-        IEnumerable, IList<T>,
-        IReadOnlyCollection<T>,
-        IReadOnlyList<T>,
-        ICollection,
-        IList
+    public class MySuperClass<T> 
+        : List<T>
+        , ICollection<T>
+        , IEnumerable<T>
+        , IEnumerable
+        , IList<T>
+        , IReadOnlyCollection<T>
+        , IReadOnlyList<T>
+        , ICollection
+        , IList
     {
         public Vector3 SampleMethod()
         {
@@ -155,17 +157,15 @@ namespace StansAssets.ProjectSample   // | Full contents of namespace indented
                 Math.Max(Vector2.one.x, Vector2.one.y),
                 Math.Max(Vector2.one.x, Vector2.one.y));
 
-            if (myVector.x > 0
-                && myVector.x > 0
-                && myVector.x > 0
-                && myVector.x > 0)
+            if (    myVector.x > 0
+                &&  myVector.y > 0
+                &&  myVector.z > 0)
             {
                 return Vector3.one;
             }
 
-            return myVector.y > myVector.x
-                ? Vector2.one
-                : Vector2.left;
+            return myVector.y > myVector.x  ? Vector2.one
+                                            : Vector2.left;
         }
 
     }
