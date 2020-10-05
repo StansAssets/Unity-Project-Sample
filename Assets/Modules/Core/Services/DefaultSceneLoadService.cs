@@ -4,13 +4,13 @@ using UnityEngine.Assertions;
 
 namespace StansAssets.ProjectSample.Core
 {
-    public class DefaultSceneLoadService : SceneLoadService, ISceneService
+    class DefaultSceneLoadService : SceneLoadService, ISceneService
     {
         public IScenePreloader Preloader { get; private set; }
 
-        public DefaultSceneLoadService(Action onInit)
+        public void PreparePreloader(Action onInit)
         {
-            Load(GameConfig.MobilePreloaderSceneName, sceneManager =>
+            Load(AppConfig.MobilePreloaderSceneName, sceneManager =>
             {
                 Preloader = (IScenePreloader)sceneManager;
                 Assert.IsNotNull(Preloader);

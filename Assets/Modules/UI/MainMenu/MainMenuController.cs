@@ -15,23 +15,18 @@ namespace StansAssets.ProjectSample.Core
 
         [SerializeField]
         GameObject m_MainMenu = null;
-
-        public void OnSceneLoaded()
+        
+        void Awake()
         {
             m_PlayButton.onClick.AddListener(() =>
             {
-                Game.State.Set(AppState.Game);
+                App.State.Set(AppState.Game);
             });
 
             m_SettingsButton.onClick.AddListener(() =>
             {
-                Game.State.Push(AppState.Settings);
+                App.State.Push(AppState.Settings);
             });
-        }
-
-        public void OnSceneUnload()
-        {
-            throw new NotImplementedException();
         }
 
         public void ActivateScene(Action onComplete)

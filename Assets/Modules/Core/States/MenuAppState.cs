@@ -10,10 +10,10 @@ namespace StansAssets.ProjectSample.Core
             switch (evt.Action)
             {
                 case StackAction.Added:
-                    AddSceneAction(SceneActionType.Load, GameConfig.MainMenuSceneName);
+                    AddSceneAction(SceneActionType.Load, AppConfig.MainMenuSceneName);
                     break;
                 case StackAction.Removed:
-                    AddSceneAction(SceneActionType.Deactivate, GameConfig.MainMenuSceneName);
+                    AddSceneAction(SceneActionType.Deactivate, AppConfig.MainMenuSceneName);
                     break;
                 case StackAction.Paused:
                     break;

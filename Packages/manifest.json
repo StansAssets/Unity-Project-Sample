@@ -9,6 +9,8 @@
     }
   ],
   "dependencies": {
+    "com.stansassets.foundation": "file:/Users/stan/Documents/StansAssets/com.stansassets.foundation",
+    "com.stansassets.scene-management": "file:/Users/stan/Documents/StansAssets/com.stansassets.scene-management/com.stansassets.scene-management",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.2.1",

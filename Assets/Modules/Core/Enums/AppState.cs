@@ -4,6 +4,7 @@ namespace StansAssets.ProjectSample.Core
     {
         Menu,
         Game,
-        Settings
+        Settings,
+        Pause
     }
 }

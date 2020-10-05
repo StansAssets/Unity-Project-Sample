@@ -13,7 +13,7 @@ namespace StansAssets.ProjectSample.Core
         {
             m_DoneButton.onClick.AddListener(() =>
             {
-                Game.State.Set(AppState.Menu);
+                App.State.Set(AppState.Menu);
             });
         }
     }

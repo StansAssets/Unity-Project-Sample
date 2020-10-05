@@ -1,15 +1,18 @@
 ﻿using StansAssets.ProjectSample.Core;
 using UnityEngine;
 
-namespace StansAssets.ProjectSample
+namespace StansAssets.ProjectSample.Landing
 {
     class LandingController : MonoBehaviour
     {
         void Start()
         {
-            GameServices.Init(() =>
+            App.Init(() =>
             {
-                Game.State.Set(AppState.Menu);
+                App.State.Set(AppState.Menu);
+                
+                var sceneService = App.Services.Get<ISceneService>();
+                sceneService.Unload(AppConfig.LandingSceneName, null);
             });
         }
     }

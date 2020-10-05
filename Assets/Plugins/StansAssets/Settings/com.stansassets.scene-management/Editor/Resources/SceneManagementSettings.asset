@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0638ae60af4124be694c12808a1b348a, type: 3}
   m_Name: SceneManagementSettings
   m_EditorClassIdentifier: 
-  LandingScene: {fileID: 0}
+  LandingScene: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}

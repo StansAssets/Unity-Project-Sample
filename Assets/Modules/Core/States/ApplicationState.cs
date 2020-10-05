@@ -8,7 +8,8 @@ namespace StansAssets.ProjectSample.Core
 
         protected ApplicationState()
         {
-            m_SceneActionsQueue = new SceneActionsQueue(GameServices.SceneService);
+            var sceneService = App.Services.Get<ISceneService>();
+            m_SceneActionsQueue = new SceneActionsQueue(sceneService);
         }
 
         protected void AddSceneAction(SceneActionType type, string sceneName)

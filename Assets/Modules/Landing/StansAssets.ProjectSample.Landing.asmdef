@@ -2,7 +2,8 @@
     "name": "StansAssets.ProjectSample.Landing",
     "references": [
         "StansAssets.SceneManagement",
-        "StansAssets.ProjectSample.Core"
+        "StansAssets.ProjectSample.Core",
+        "StansAssets.Foundation"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

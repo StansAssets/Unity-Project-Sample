@@ -20,12 +20,26 @@ namespace StansAssets.ProjectSample.Core
 
         void OnStackPreprocess(StackOperationEvent<AppState> e, Action onComplete)
         {
-            m_Preloader.FadeIn(onComplete.Invoke);
+            if (e.State.Equals(AppState.Game) || e.State.Equals(AppState.Menu))
+            {
+                m_Preloader.FadeIn(onComplete.Invoke);
+            }
+            else
+            {
+                onComplete.Invoke();
+            }
         }
 
         void OnStackPostprocess(StackOperationEvent<AppState> e, Action onComplete)
         {
-            m_Preloader.FadeOut(onComplete.Invoke);
+            if (e.State.Equals(AppState.Game) || e.State.Equals(AppState.Menu))
+            {
+                m_Preloader.FadeOut(onComplete.Invoke);
+            }
+            else
+            {
+                onComplete.Invoke();
+            }
         }
 
         public void ApplicationStateChanged(StackOperationEvent<AppState> e) { }
