@@ -22,7 +22,7 @@ namespace StansAssets.ProjectSample.Core
 
         public void ActivateScene(Action onComplete)
         {
-            m_SceneService.Load(AppConfig.InGameUISceneName, manager =>
+            m_SceneService.Load<ISceneManager>(AppConfig.InGameUISceneName, manager =>
             {
                 var inGameUI = (IInGameUI)manager;
                 Assert.IsNotNull(inGameUI);
