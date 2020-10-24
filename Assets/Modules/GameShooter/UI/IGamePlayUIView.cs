@@ -1,8 +1,9 @@
 using System;
+using StansAssets.SceneManagement;
 
 namespace Modules.Game.UI
 {
-    public interface IGamePlayUIView
+    public interface IGamePlayUIView : ISceneManager
     {
         void SetScore(int score);
         void SetLivesCount(int total, int count);

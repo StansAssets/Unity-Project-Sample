@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Modules.Game.UI
 {
-    public class GamePlayUIView : MonoBehaviour, IGamePlayUIView, ISceneManager
+    public class GamePlayUIView : MonoBehaviour, IGamePlayUIView
     {
         [Header("Panels")]
         [SerializeField]

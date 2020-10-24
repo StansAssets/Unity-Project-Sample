@@ -1196,8 +1196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38df4309b7bd54589ac03360e7b9fd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GamePlayUIView: {fileID: 0}
   m_Camera: {fileID: 1309983654}
+  m_GameEventsDelegates:
+  - {fileID: 1309334329}
+  - {fileID: 1309262193}
 --- !u!4 &1438849383
 Transform:
   m_ObjectHideFlags: 0

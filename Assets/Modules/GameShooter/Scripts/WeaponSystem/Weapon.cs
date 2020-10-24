@@ -1,9 +1,10 @@
-﻿using StansAssets.ProjectSample.Core;
+﻿
+using StansAssets.ProjectSample.Core;
 using UnityEngine;
 
 namespace Game.GamePlay
 {
-    class Weapon : MonoBehaviour
+    class Weapon : GameEventsDelegate
     {
         /// <summary>
         /// Effects to appear at the muzzle of the gun (muzzle flash, smoke, etc.)
@@ -37,15 +38,13 @@ namespace Game.GamePlay
 
         float m_LastFireTime = 0f;
         
-        void Update()
+        public override void OnGameInitialized()
         {
-            if (Input.GetKeyDown("space"))
-            {
-                Fire();
-            }
+            var input = Game.Services.Get<IInputService>();
+            input.OnFire += OnFire;
         }
 
-        void Fire()
+        void OnFire()
         {
             if (!Mathf.Approximately(m_LastFireTime, 0f)  
                 && m_LastFireTime + m_FireRate > Time.time)
@@ -59,5 +58,6 @@ namespace Game.GamePlay
             
             GetComponent<AudioSource>().PlayOneShot(m_FireSound);
         }
+        
     }
 }

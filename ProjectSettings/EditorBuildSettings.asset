@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Modules/GameShooter/Scenes/ShooterGameUIPauseScene.unity
     guid: fbbac1a24299640869ecb7e4732d9b77
+  - enabled: 1
+    path: Assets/Modules/GameShooter/Scenes/MobileInput/MobileInput.unity
+    guid: bbaa521028d714be98b413bae24ce23c
   m_configObjects: {}

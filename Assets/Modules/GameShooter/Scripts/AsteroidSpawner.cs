@@ -6,6 +6,10 @@ using Random = UnityEngine.Random;
 
 namespace Game.GamePlay
 {
+   
+
+
+
     class AsteroidSpawner : MonoBehaviour
     {
         [SerializeField, Range(1, 5)]
