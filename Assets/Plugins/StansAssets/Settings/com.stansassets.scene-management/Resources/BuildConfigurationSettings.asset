@@ -13,13 +13,4 @@ MonoBehaviour:
   m_Name: BuildConfigurationSettings
   m_EditorClassIdentifier: 
   ActiveConfigurationIndex: 0
-  BuildConfigurations:
-  - Name: Default
-    DefaultScenesFirst: 0
-    DefaultScenes: []
-    Platforms:
-    - BuildTargets: 
-      Scenes: []
-    m_SceneNames: []
-    m_SceneAssets: []
-    m_AllSceneNames: []
+  BuildConfigurations: []

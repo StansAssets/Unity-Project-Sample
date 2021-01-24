@@ -10,7 +10,7 @@ namespace StansAssets.ProjectSample.Core
 
         public void PreparePreloader(Action onInit)
         {
-            Load<ISceneManager>(AppConfig.MobilePreloaderSceneName, sceneManager =>
+            Load<ISceneManager>(AppConfig.MobilePreloaderSceneName, (scene, sceneManager) =>
             {
                 Preloader = (IScenePreloader)sceneManager;
                 Assert.IsNotNull(Preloader);

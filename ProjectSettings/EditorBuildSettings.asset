@@ -6,33 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Modules/GameDummy/GamePlayLevel1.unity
-    guid: f7e92b6cd7c1a4cf194e4495403c9ad8
-  - enabled: 1
-    path: Assets/Modules/UI/InGameBackUI/InGameBackUI.unity
-    guid: ab2db9074fb6a4d929268cb6e1014d3b
-  - enabled: 1
-    path: Assets/Modules/UI/InGameUI/InGameUI.unity
-    guid: 47b514e34a3ad4277ac5563ebebf5419
-  - enabled: 1
-    path: Assets/Modules/Landing/Landing.unity
+    path: Assets/Modules/SharedModules/Landing/Landing.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Modules/UI/MainMenu/MainMenu.unity
+    path: Assets/Modules/GameBoxes/BoxesGamePlay/BoxesGamePlayLevel.unity
+    guid: 499b7436b676b48cf84860438571d7f5
+  - enabled: 1
+    path: Assets/Modules/GameBoxes/BoxesGameUI/BoxesInGameUI.unity
+    guid: 35a45212c2d6c4aeeb65725199cedaa6
+  - enabled: 1
+    path: Assets/Modules/GameBoxes/BoxesMenuUI/BoxesMainMenu.unity
     guid: 67b1869e0523a4238ab93a68a573b630
   - enabled: 1
-    path: Assets/Modules/UI/Preloader/MobilePreloader.unity
+    path: Assets/Modules/SharedModules/Preloader/MobilePreloader.unity
     guid: 3b6fbfcbaf37d4eb6b4777ca2728b102
-  - enabled: 1
-    path: Assets/Modules/GameShooter/Scenes/ShooterGameScene.unity
-    guid: 245315a36cef1405a8187d007db67817
-  - enabled: 1
-    path: Assets/Modules/GameShooter/Scenes/ShooterGameUIScene.unity
-    guid: 73651de8a103346a78842dd8b897756e
-  - enabled: 1
-    path: Assets/Modules/GameShooter/Scenes/ShooterGameUIPauseScene.unity
-    guid: fbbac1a24299640869ecb7e4732d9b77
-  - enabled: 1
-    path: Assets/Modules/GameShooter/Scenes/MobileInput/MobileInput.unity
-    guid: bbaa521028d714be98b413bae24ce23c
   m_configObjects: {}

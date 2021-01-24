@@ -4,7 +4,7 @@ namespace StansAssets.ProjectSample.Core
 {
     public abstract class ApplicationState : IApplicationState<AppState>
     {
-        readonly SceneActionsQueue m_SceneActionsQueue;
+        protected readonly SceneActionsQueue m_SceneActionsQueue;
 
         protected ApplicationState()
         {
@@ -16,11 +16,14 @@ namespace StansAssets.ProjectSample.Core
         {
             m_SceneActionsQueue.AddAction(type, sceneName);
         }
-        
+
+        /*
         protected abstract void OnChangeState(StackChangeEvent<AppState> evt, IProgressReporter reporter);
         public void ChangeState(StackChangeEvent<AppState> evt, IProgressReporter reporter) {
             OnChangeState(evt, reporter);
             m_SceneActionsQueue.Start(reporter.UpdateProgress, reporter.SetDone);
-        }
+        }*/
+
+        public abstract void ChangeState(StackChangeEvent<AppState> evt, IProgressReporter progressReporter);
     }
 }

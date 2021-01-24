@@ -3,6 +3,7 @@ using StansAssets.SceneManagement;
 
 namespace StansAssets.ProjectSample.Core
 {
+    /*
     public class PauseAppState : ApplicationState
     {
         protected override void OnChangeState(StackChangeEvent<AppState> evt, IProgressReporter reporter)
@@ -23,5 +24,5 @@ namespace StansAssets.ProjectSample.Core
                     throw new ArgumentOutOfRangeException(nameof(evt.Action), evt.Action, null);
             }
         }
-    }
+    }*/
 }

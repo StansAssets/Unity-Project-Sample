@@ -7,7 +7,7 @@ namespace StansAssets.ProjectSample.Core
     class PreloadManager : IApplicationStateDelegate<AppState>
     {
         readonly IScenePreloader m_Preloader;
-        readonly List<AppState> m_StatesWithPreloaderRequired;
+       // readonly List<AppState> m_StatesWithPreloaderRequired;
 
         public PreloadManager(IApplicationStateStack<AppState> stateStack, IScenePreloader preloader)
         {
@@ -20,7 +20,7 @@ namespace StansAssets.ProjectSample.Core
 
         void OnStackPreprocess(StackOperationEvent<AppState> e, Action onComplete)
         {
-            if (e.State.Equals(AppState.Game) || e.State.Equals(AppState.Menu))
+            if (e.State.Equals(AppState.Game) || e.State.Equals(AppState.MainMenu))
             {
                 m_Preloader.FadeIn(onComplete.Invoke);
             }
@@ -32,7 +32,7 @@ namespace StansAssets.ProjectSample.Core
 
         void OnStackPostprocess(StackOperationEvent<AppState> e, Action onComplete)
         {
-            if (e.State.Equals(AppState.Game) || e.State.Equals(AppState.Menu))
+            if (e.State.Equals(AppState.Game) || e.State.Equals(AppState.MainMenu))
             {
                 m_Preloader.FadeOut(onComplete.Invoke);
             }
