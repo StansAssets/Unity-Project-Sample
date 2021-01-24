@@ -31,9 +31,9 @@ namespace StansAssets.ProjectSample.Boxes
             StartCoroutine(SpawnLoop());
         }
 
-        public void Pause()
+        public void Pause(bool isPaused)
         {
-            throw new NotImplementedException();
+
         }
 
         public void Restart()

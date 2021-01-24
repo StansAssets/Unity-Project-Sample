@@ -1,18 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using StansAssets.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BoxesInGameUIController : MonoBehaviour
+namespace StansAssets.ProjectSample.Boxes.GameUI
 {
-    // Start is called before the first frame update
-    void Start()
+    class BoxesInGameUIController : MonoBehaviour, IBoxesInGameUI
     {
-        
-    }
+        [SerializeField]
+        Button m_PauseButton = null;
+        public event Action OnPauseRequest;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Awake()
+        {
+            m_PauseButton.onClick.AddListener(() =>
+            {
+                OnPauseRequest?.Invoke();
+            });
+        }
     }
 }

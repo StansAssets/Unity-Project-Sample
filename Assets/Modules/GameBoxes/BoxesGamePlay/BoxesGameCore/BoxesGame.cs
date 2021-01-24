@@ -31,6 +31,30 @@ namespace StansAssets.ProjectSample.Boxes
             });
         }
 
+        public void Pause(bool isPaused)
+        {
+            foreach (var gameEntity in m_GameEntities)
+            {
+                gameEntity.Pause(isPaused);
+            }
+        }
+
+        public void Destroy()
+        {
+            foreach (var gameEntity in m_GameEntities)
+            {
+                gameEntity.Destroy();
+            }
+        }
+
+        public void Restart()
+        {
+            foreach (var gameEntity in m_GameEntities)
+            {
+                gameEntity.Restart();
+            }
+        }
+
         void InitGameEntities(IList<IBoxesGameEntity> entities, Action onComplete)
         {
             if (entities.Count == 0)
