@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using StansAssets.Foundation.Patterns;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,6 +23,7 @@ namespace StansAssets.ProjectSample.Boxes
             InitServices();
             m_GameEntities = GetComponentsInChildren<IBoxesGameEntity>(m_GamePlayScene);
             var entitiesInitQueue = ListPool<IBoxesGameEntity>.Get();
+            entitiesInitQueue.AddRange(m_GameEntities);
             InitGameEntities(entitiesInitQueue, () =>
             {
                 ListPool<IBoxesGameEntity>.Release(entitiesInitQueue);
@@ -41,6 +43,7 @@ namespace StansAssets.ProjectSample.Boxes
             entities.RemoveAt(0);
             gameEntity.Init(m_GameServices, () =>
             {
+                Debug.Log($"{ObjectNames.NicifyVariableName(gameEntity.GetType().Name)} Initialized!");
                 InitGameEntities(entities, onComplete);
             });
         }
