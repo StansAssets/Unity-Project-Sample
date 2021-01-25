@@ -9,20 +9,21 @@ namespace StansAssets.ProjectSample.Core
         [SerializeField]
         float m_PlayTime = 1f;
 
-        Action m_OnComplete;
 
-        public override void Init(Action onRelease)
+        public override void Init()
         {
-            m_OnComplete = onRelease;
             StartCoroutine(WaitForPlay());
+        }
+
+        protected override void OnRelease()
+        {
         }
 
         IEnumerator WaitForPlay()
         {
             yield return new WaitForSeconds(m_PlayTime);
-            m_OnComplete.Invoke();
+            Release();
         }
 
-        public override void Release() { }
     }
 }

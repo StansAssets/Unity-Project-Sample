@@ -5,7 +5,19 @@ namespace StansAssets.ProjectSample.Core
 {
     public abstract class PoolableGameObject : MonoBehaviour
     {
-        public abstract void Init(Action onRelease);
-        public abstract void Release();
+        Action m_OnRelease;
+        public abstract void Init();
+        protected abstract void OnRelease();
+
+        public void Release()
+        {
+            OnRelease();
+            m_OnRelease?.Invoke();
+        }
+
+        internal void SetOnReleaseCallback(Action onRelease)
+        {
+            m_OnRelease = onRelease;
+        }
     }
 }

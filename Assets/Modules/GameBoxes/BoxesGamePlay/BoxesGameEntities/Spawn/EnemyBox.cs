@@ -1,17 +1,16 @@
 using System;
 using StansAssets.ProjectSample.Core;
-using UnityEngine;
 
 namespace StansAssets.ProjectSample.Boxes
 {
     public class EnemyBox : PoolableGameObject
     {
-        public override void Init(Action onRelease)
+        public override void Init()
         {
-            gameObject.SetActive(true);
+
         }
 
-        public override void Release()
+        protected override void OnRelease()
         {
 
         }

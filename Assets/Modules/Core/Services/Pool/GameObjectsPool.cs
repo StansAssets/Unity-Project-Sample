@@ -34,7 +34,9 @@ namespace StansAssets.ProjectSample.Core
             var pool = GetPool(origin);
             var gameObject = pool.Get();
             var poolableObject = gameObject.GetComponent<PoolableGameObject>();
-            poolableObject.Init(() =>
+            gameObject.SetActive(true);
+            poolableObject.Init();
+            poolableObject.SetOnReleaseCallback(() =>
             {
                 Release(origin, gameObject);
             });
@@ -44,6 +46,7 @@ namespace StansAssets.ProjectSample.Core
         void Release(GameObject origin, GameObject instance)
         {
             var pool = GetPool(origin);
+            instance.SetActive(false);
             pool.Release(instance);
         }
 
