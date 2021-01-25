@@ -38,12 +38,11 @@ namespace StansAssets.ProjectSample.Boxes
 
         public void Restart()
         {
-            throw new NotImplementedException();
         }
 
         public void Destroy()
         {
-            throw new NotImplementedException();
+
         }
 
         IEnumerator SpawnLoop()

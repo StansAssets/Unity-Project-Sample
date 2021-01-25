@@ -43,6 +43,7 @@ namespace StansAssets.ProjectSample.Boxes
                     });
                     break;
                 case StackAction.Removed:
+                    m_BoxesGame.Destroy();
                     m_SceneActionsQueue.AddAction(SceneActionType.Unload, k_GamePlaySceneName);
                     m_SceneActionsQueue.AddAction(SceneActionType.Unload, k_InGameUISceneName);
                     m_SceneActionsQueue.Start(progressReporter.UpdateProgress, progressReporter.SetDone);
@@ -72,7 +73,6 @@ namespace StansAssets.ProjectSample.Boxes
                 manager.OnMainMenu += () =>
                 {
                     m_SceneService.Unload(k_PauseUISceneName, () => { });
-                    m_BoxesGame.Destroy();
                     App.State.Set(AppState.MainMenu);
                 };
 
