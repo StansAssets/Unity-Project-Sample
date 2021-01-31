@@ -6,7 +6,8 @@
         "StansAssets.SceneManagement",
         "StansAssets.Foundation",
         "StansAssets.ProjectSample.Boxes.GameUI",
-        "StansAssets.ProjectSample.Boxes.PauseUI"
+        "StansAssets.ProjectSample.Boxes.PauseUI",
+        "StansAssets.ProjectSample.Boxes.EndGameUI"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

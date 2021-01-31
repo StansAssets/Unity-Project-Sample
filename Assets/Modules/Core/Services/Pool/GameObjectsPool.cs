@@ -73,7 +73,6 @@ namespace StansAssets.ProjectSample.Core
                 {
                     gameObject.SetActive(false);
                     gameObject.transform.SetParent(m_Root.transform);
-                    gameObject.GetComponent<PoolableGameObject>().Release();
                 });
 
             return pool;

@@ -6,6 +6,7 @@ namespace StansAssets.ProjectSample.Core
 {
     public class DestroyOverTimePoolable : PoolableGameObject
     {
+        
         [SerializeField]
         float m_PlayTime = 1f;
 

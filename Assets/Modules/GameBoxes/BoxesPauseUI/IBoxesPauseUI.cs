@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using StansAssets.SceneManagement;
 
 namespace StansAssets.ProjectSample.Boxes.PauseUI
@@ -10,4 +10,3 @@ namespace StansAssets.ProjectSample.Boxes.PauseUI
         event Action OnRestart;
     }
 }
-

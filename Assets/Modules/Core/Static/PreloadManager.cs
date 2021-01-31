@@ -7,7 +7,6 @@ namespace StansAssets.ProjectSample.Core
     class PreloadManager : IApplicationStateDelegate<AppState>
     {
         readonly IScenePreloader m_Preloader;
-       // readonly List<AppState> m_StatesWithPreloaderRequired;
 
         public PreloadManager(IApplicationStateStack<AppState> stateStack, IScenePreloader preloader)
         {
